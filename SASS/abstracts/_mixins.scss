@@ -1,0 +1,6 @@
+@mixin btn-style($color) {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color;
+}
