@@ -1,0 +1,110 @@
+.about {
+  margin-top: 8rem;
+
+  .title_secondary {
+    color: transparent;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1rem;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+    -webkit-background-clip: text;
+    transition: all 0.4s;
+    backface-visibility: hidden;
+
+    &:hover {
+      transform: scale(1.01);
+      text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .about_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8rem 10rem 0 10rem;
+
+    .about_items {
+      width: 50%;
+      color: #777777;
+    }
+
+    .about_desc {
+      font-size: 14px;
+      margin-top: 1rem;
+      max-width: 48rem;
+    }
+
+    .about_more {
+      display: inline-block;
+      margin-top: 4.1rem;
+      color: #777777;
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 700;
+      padding: 1.5rem;
+      border-bottom: 1px solid #BA8554;
+
+      &:hover {
+        transform: translateY(-1rem);
+        cursor: pointer;
+        background: #BA8554;
+        color: #ffff;
+      }
+
+      &:active {
+        transform: translateY(-0.5rem);
+      }
+
+      .arrow {
+        font-size: 14px;
+        color: black;
+      }
+    }
+
+    .about_title {
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .about_title .about_desc {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    .about_images {
+      position: relative;
+      width: 50%;
+
+      & img {
+        width: 50%;
+        border-radius: .5rem;
+        z-index: 10;
+        transition: all 0.1s ease-in-out;
+
+        &:first-child {
+          position: absolute;
+        }
+
+        &:nth-child(2) {
+          position: absolute;
+          right: 10rem;
+          top: 4rem;
+        }
+
+        &:last-child {
+          position: absolute;
+          left: 7rem;
+          top: 15rem;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.2s ease-in-out;
+          z-index: 20;
+        }
+      }
+    }
+  }
+}
